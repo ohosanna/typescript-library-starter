@@ -16,7 +16,8 @@
   },
   "scripts": {
     "start": "rollup -c rollup.config.ts -w",
-    "build": "tsc --module commonjs && rollup -c rollup.config.ts"
+    "build": "tsc --module commonjs && rollup -c rollup.config.ts",
+    "postinstall": "ts-node tools/init"
   },
   "devDependencies": {
     "@rollup/pluginutils": "^3.0.8",
