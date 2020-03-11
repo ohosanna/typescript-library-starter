@@ -1,0 +1,42 @@
+{
+  "name": "--libraryname--",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "dist/--libraryname--.umd.js",
+  "module": "dist/--libraryname--.es5.js",
+  "typings": "dist/types/--libraryname--.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "--username-- <--usermail-->",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "rollup -c rollup.config.ts -w",
+    "build": "tsc --module commonjs && rollup -c rollup.config.ts"
+  },
+  "devDependencies": {
+    "@rollup/pluginutils": "^3.0.8",
+    "@types/node": "^13.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.23.0",
+    "colors": "^1.4.0",
+    "eslint": "^6.8.0",
+    "lodash.camelcase": "^4.3.0",
+    "prompt": "^1.0.0",
+    "replace-in-file": "^5.0.2",
+    "rollup": "^2.0.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-sourcemaps": "^0.5.0",
+    "rollup-plugin-typescript2": "^0.26.0",
+    "shelljs": "^0.8.3",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {}
+}
